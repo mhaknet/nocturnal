@@ -20,16 +20,13 @@ modules:
   - type: dnf
     repos:
       files:
-        - https://github.com/terrapkg/packages/raw/f45/anda/terra/release/terra.repo
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
 
      # copr:
      #   - atim/starship
     install:
       packages:
-        - repo: terra
-          no-gpgchecks: true
-          packages:
-           - terra-release
+        - terra-release
         - noctalia
         - umbriel-nightly
         - noctalia-greeter
